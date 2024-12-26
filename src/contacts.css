@@ -27,3 +27,48 @@
     margin-right: 100px;
     margin-right: 50px;
 }
+@media (max-width: 768px) {
+    .contacts_list {
+        width: 768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services {
+        height: 2300px;
+    }
+    .card {
+        margin-top: 60px;
+    }
+    #contacts h2{
+        display: flex;
+        justify-content: center
+    }
+    .leave {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        width: 527px;
+        height: 700px;
+        border-radius: 60px;
+        filter: drop-shadow(17px 12px 46px rgba(0, 0, 0, 0.17));
+        margin-bottom: 50px;
+    }
+    .content_position {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contacts .logo {
+        margin-right: 0px;
+        margin-left: 0px
+    }
+  }

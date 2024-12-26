@@ -63,3 +63,27 @@ margin-bottom: 100px;
 .sqr_text b {
     font-size: 64px;
 }
+@media (max-width: 768px) {
+    #about_us {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .about_is_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sqr_list {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .sqr {
+        margin-top: 25px;
+    }
+  }

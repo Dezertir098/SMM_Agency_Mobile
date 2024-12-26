@@ -38,3 +38,32 @@
     display: flex;
     justify-content: space-evenly
 }
+@media (max-width: 768px) {
+    .site_content {
+        flex-direction: column;
+    }
+    .background {
+        background: linear-gradient(to right, #2D8AC3, #98328A);
+        height: 1070px; 
+    }
+    #fotter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fotter_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    #fotter p {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .fotter_column {
+         margin-right: 0px; 
+    }
+  }

@@ -90,7 +90,7 @@ function Button() {
           <div className={`modal-content ${isClosing ? 'slide-out' : ''}`}>
             <div className="content">
               <span className="close" onClick={closeModal}>&times;</span>
-              <img className="logo" src="/SMM_Agency_Mobile/Derry_Logo.png" alt="Derry Logo" />
+              <img className="logo modal-logo " src="/SMM_Agency_Mobile/Derry_Logo.png" alt="Derry Logo" />
             </div>
             <div className="c">
               <p>Имя</p>

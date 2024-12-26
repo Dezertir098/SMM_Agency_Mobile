@@ -21,7 +21,7 @@
 .card {
     height: 580px;
     width: 355px;
-    filter: drop-shadow(17px 12px 46px rgba(0, 0, 0, 0.17));
+    
     background-color: #ffffff;
     transform: rotate(10deg);
     border-radius: 60px;
@@ -30,15 +30,17 @@
 .inside_card {
     height: 480px;
     width: 350px;
-    filter: drop-shadow(17px 12px 46px rgba(0, 0, 0, 0.17));
+    
     background-color: #ffffff;
     transform: rotate(-13deg);
     border-radius: 60px;
+    
+    border: 1px solid #000000; /* Граница толщиной 2 пикселя, черного цвета */
 }
     .inside_card_blue {
     height: 480px;
     width: 350px;
-    filter: drop-shadow(17px 12px 46px rgba(0, 0, 0, 0.17));
+    
     background-color: #2D8AC3;
     transform: rotate(-13deg);
     border-radius: 60px;
@@ -60,6 +62,7 @@
 }
 .tarif {
     transform: rotate(3deg);
+    
 }
 .card_text {
     display: flex;
@@ -87,3 +90,24 @@ img {
     font-size: 24px;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+    #services .container {
+        width: 768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services {
+        height: 2300px;
+    }
+    .card {
+        margin-top: 60px;
+    }
+  }

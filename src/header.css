@@ -20,8 +20,9 @@ h1 {
 li {
     list-style: none;
     display: flex;
-    margin-right: 222px;
-    margin-left: 222px;
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 5px;
 }
 a {
@@ -60,9 +61,70 @@ a {
 }
 
 ul {
-    padding-right: 30px;
-    white-space: nowrap; 
+    margin-left: 180px;
+    margin-right: 180px;
+    white-space: nowrap;
+    display: flex;
 }
-/* Group 77 */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+  }
+  
+  /* Иконка меню (три полоски) */
+  .menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  /* Мобильная адаптация */
 
 
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Отступ сверху */
+      right: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .menu ul li {
+      margin-bottom: 20px;
+    }
+  
+    /* Показываем кнопку меню */
+    .menu-toggle {
+      display: flex;
+    }
+  
+    /* Уменьшаем логотип на мобильных устройствах */
+      .logo {
+      margin-right: 570px;
+      margin-left: 30px;
+    }
+    .modal-logo {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
